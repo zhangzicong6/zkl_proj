@@ -10,9 +10,9 @@ router.get('/', function(req, res, next) {
 });
 
 router.get('/get_zkl_js',function(req,res,next){
-	console.log('========get_zkl_js=======')
+	//console.log('========get_zkl_js=======')
 	mem.get('get_zkl_js_liujiazhi').then(function(value){
-		console.log('========get_zkl_js mem=======');
+		//console.log('========get_zkl_js mem=======');
 		if(value){
 			var text = 'get_zkl_js('+value+')';
 			res.send(text)

