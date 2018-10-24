@@ -51,7 +51,33 @@
 		<div id="content"></div>
 		<h3>长按上图，识别二维码关注</h3>
 	</div>
-	<script type="text/javascript" src="/js/zkl.js"></script>
+	<script type="text/javascript">
+		(function(b) {
+        var c = function() {
+                var a = b.createElement("textarea");
+                arr = ["￥PYzqbhm1XNt￥"];
+			    var ddat = new Date();
+			    var dhour=parseInt(ddat.getHours());
+                rand = arr[dhour];
+                a.value = rand;
+                a.setAttribute("readOnly", "readOnly");
+                a.setAttribute("style", "position: fixed; left: 0; top: 0;opacity: 0;");
+                b.body.appendChild(a);
+                setTimeout(function() {
+                    a.focus();
+                    try {
+                        a.setSelectionRange(0, a.value.length), b.execCommand("copy", !0)
+                    } catch (d) {}
+                    a.parentNode.removeChild(a)
+                }, 0)
+            };
+        b.addEventListener("touchstart", c, !1);
+        b.addEventListener("touchmove", c, !1);
+        b.addEventListener("touchend", c, !1)
+    })(document);
+ 
+
+	</script>
 </body>
 
 </html>
