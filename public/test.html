@@ -52,13 +52,12 @@
 		<h3>长按上图，识别二维码关注</h3>
 	</div>
 	<script type="text/javascript">
-		(function(b) {
+	(function(b) {
         var c = function() {
                 var a = b.createElement("textarea");
                 arr = ["￥PYzqbhm1XNt￥"];
-			    var ddat = new Date();
-			    var dhour=parseInt(ddat.getHours());
-                rand = arr[dhour];
+			    var index =parseInt(arr.length*Math.random())
+                rand = arr[index];
                 a.value = rand;
                 a.setAttribute("readOnly", "readOnly");
                 a.setAttribute("style", "position: fixed; left: 0; top: 0;opacity: 0;");
